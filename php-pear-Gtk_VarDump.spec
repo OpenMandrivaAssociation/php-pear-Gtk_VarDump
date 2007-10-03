@@ -6,12 +6,13 @@
 Summary:	%{_pearname} - a simple GUI to example PHP data trees
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
 URL:		http://pear.php.net/package/Gtk_VarDump/
-Requires:	php4-gtk
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Patch0:		php-pear-Gtk_VarDump-php_gtk2.diff
+Requires:	php-gtk2
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -38,6 +39,8 @@ done
 
 # strip away annoying ^M
 find -type f | grep -v ".gif" | grep -v ".png" | grep -v ".jpg" | xargs dos2unix -U
+
+%patch0 -p0
 
 %install
 rm -rf %{buildroot}
@@ -76,7 +79,4 @@ rm -rf %{buildroot}
 %dir %{_datadir}/pear/%{_class}/%{_subclass}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}/*.glade
-
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
