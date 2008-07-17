@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - a simple GUI to example PHP data trees
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Gtk_VarDump/
@@ -18,7 +18,7 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	dos2unix
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Just a regedit type interface to examine PHP data trees.
