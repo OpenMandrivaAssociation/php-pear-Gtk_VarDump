@@ -6,7 +6,7 @@
 Summary:	%{_pearname} - a simple GUI to example PHP data trees
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Gtk_VarDump/
