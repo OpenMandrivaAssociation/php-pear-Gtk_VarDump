@@ -3,14 +3,14 @@
 %define		upstream_name	%{_class}_%{_subclass}
 
 Name:		php-pear-%{upstream_name}
-Version:	1.0.0
-Release:	%mkrel 5
+Version:	1.0.1
+Release:	%mkrel 1
 Summary:	A simple GUI to example PHP data trees
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/Gtk_VarDump/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
-Patch0:		php-pear-Gtk_VarDump-1.0.0-php_gtk2.patch
+Patch0:		php-pear-Gtk_VarDump-1.0.1-php_gtk2.patch
 Requires:	php-gtk2
 Requires(post): php-pear
 Requires(preun): php-pear
@@ -60,4 +60,5 @@ fi
 %files
 %defattr(-,root,root)
 %{_datadir}/pear/%{_class}
+%{_datadir}/pear/data/%{upstream_name}
 %{_datadir}/pear/packages/%{upstream_name}.xml
