@@ -1,0 +1,31 @@
+diff -Naur -x '*~' php-pear-Gtk_VarDump-1.0.1/Gtk_VarDump-1.0.1/Gtk/VarDump.php php-pear-Gtk_VarDump-1.0.1-php_gtk2/Gtk_VarDump-1.0.1/Gtk/VarDump.php
+--- php-pear-Gtk_VarDump-1.0.1/Gtk_VarDump-1.0.1/Gtk/VarDump.php	2010-11-27 22:10:37.000000000 +0000
++++ php-pear-Gtk_VarDump-1.0.1-php_gtk2/Gtk_VarDump-1.0.1/Gtk/VarDump.php	2010-11-27 22:10:57.000000000 +0000
+@@ -75,7 +75,7 @@
+         // it thought there was a rountine in pear somewhere to do this..
+         
+         if (!extension_loaded('php-gtk')) {
+-             dl('php_gtk.' .PHP_SHLIB_SUFFIX    ); 
++             dl('php_gtk2.' .PHP_SHLIB_SUFFIX    ); 
+         }
+         $this->_loadInterface($baseName);
+         $this->_gtkTree->clear();
+@@ -395,4 +395,4 @@
+ new GTK_VarDump($t,'test');
+ */
+ 
+- 
+\ Pas de fin de ligne à la fin du fichier.
++ 
+diff -Naur -x '*~' php-pear-Gtk_VarDump-1.0.1/package.xml php-pear-Gtk_VarDump-1.0.1-php_gtk2/package.xml
+--- php-pear-Gtk_VarDump-1.0.1/package.xml	2010-11-27 22:10:37.000000000 +0000
++++ php-pear-Gtk_VarDump-1.0.1-php_gtk2/package.xml	2010-11-27 22:11:30.000000000 +0000
+@@ -34,7 +34,7 @@
+  <contents>
+   <dir baseinstalldir="/" name="/">
+    <file baseinstalldir="/" md5sum="57463dedd52e674e8fe6f289e29f3fc7" name="examples/example.php" role="doc" />
+-   <file baseinstalldir="/" md5sum="fbfa03521d88df2e010e56183323ff2a" name="Gtk/VarDump.php" role="php" />
++   <file baseinstalldir="/" md5sum="c0966d11ff53850a9fa940055714b29b" name="Gtk/VarDump.php" role="php" />
+    <file baseinstalldir="/" md5sum="e238f98fe5a70151fe60ce43e63e6171" name="Gtk/VarDump/interface.glade" role="data" />
+   </dir>
+  </contents>
