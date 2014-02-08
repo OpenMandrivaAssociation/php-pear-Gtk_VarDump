@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.0.1
-Release:	3
+Release:	4
 Summary:	A simple GUI to example PHP data trees
 License:	PHP License
 Group:		Development/PHP
