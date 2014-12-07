@@ -5,7 +5,7 @@
 Summary:	A simple GUI to example PHP data trees
 Name:		php-pear-%{modname}
 Version:	1.0.1
-Release:	9
+Release:	10
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/Gtk_VarDump/
