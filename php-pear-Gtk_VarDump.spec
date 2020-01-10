@@ -22,7 +22,7 @@ Just a regedit type interface to examine PHP data trees.
 
 %prep
 %setup -qc
-%apply_patches
+%autopatch -p1
 mv package.xml %{modname}-%{version}/%{modname}.xml
 
 %install
