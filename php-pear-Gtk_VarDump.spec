@@ -8,7 +8,7 @@ Version:	1.0.1
 Release:	13
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/Gtk_VarDump/
+Url:		https://pear.php.net/package/Gtk_VarDump/
 Source0:	http://download.pear.php.net/package/%{modname}-%{version}.tar.bz2
 Patch0:		php-pear-Gtk_VarDump-1.0.1-php_gtk2.patch
 BuildArch:	noarch
